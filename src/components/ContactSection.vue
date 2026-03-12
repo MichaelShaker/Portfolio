@@ -24,6 +24,23 @@
             <a href="tel:0621364475" class="btn-secondary">
               Call Me
             </a>
+
+            <a
+                href="/cv/Michael_Shaker_CV.pdf"
+                download
+                class="btn-secondary"
+            >
+              Download CV
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/michaelshaker/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-secondary"
+            >
+              LinkedIn
+            </a>
           </div>
         </div>
 
@@ -48,6 +65,8 @@
             <h3>Amsterdam, Netherlands</h3>
           </div>
         </div>
+
+
 
         <div class="contact-glow contact-glow-1"></div>
         <div class="contact-glow contact-glow-2"></div>

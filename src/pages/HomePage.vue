@@ -1,10 +1,10 @@
 <script setup>
 import HeroSection from '../components/HeroSection.vue'
-import FeaturedProject from '../components/FeaturedProject.vue'
-import ProjectsSection from '../components/ProjectsSection.vue'
 import AboutSection from '../components/AboutSection.vue'
+import ProjectsSection from '../components/ProjectsSection.vue'
 import TimelineSection from '../components/TimelineSection.vue'
 import SkillsSection from '../components/SkillsSection.vue'
+import DocumentsSection from '../components/DocumentsSection.vue'
 import ContactSection from '../components/ContactSection.vue'
 import FooterSection from '../components/FooterSection.vue'
 </script>
@@ -12,13 +12,12 @@ import FooterSection from '../components/FooterSection.vue'
 <template>
   <main>
     <HeroSection />
-    <FeaturedProject />
-    <ProjectsSection />
     <AboutSection />
+    <ProjectsSection />
     <TimelineSection />
     <SkillsSection />
+    <DocumentsSection />
     <ContactSection />
+    <FooterSection />
   </main>
-
-  <FooterSection />
 </template>

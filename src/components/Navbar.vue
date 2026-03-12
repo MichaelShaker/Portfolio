@@ -11,6 +11,7 @@
         <a href="#about">About</a>
         <a href="#timeline">Journey</a>
         <a href="#skills">Skills</a>
+        <a href="#documents">Documents</a>
         <a href="#contact">Contact</a>
       </nav>
 

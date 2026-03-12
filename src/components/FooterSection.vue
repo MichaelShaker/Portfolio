@@ -24,20 +24,29 @@
       </div>
 
       <div class="footer-social">
-
         <a
             href="https://github.com/MichaelShaker"
             target="_blank"
+            rel="noopener noreferrer"
         >
           GitHub
         </a>
 
         <a
-            href="mailto:michaelshaker19@gmail.com"
+            href="https://www.linkedin.com/in/michaelshaker/"
+            target="_blank"
+            rel="noopener noreferrer"
         >
-          Email
+          LinkedIn
         </a>
 
+        <a href="/cv/Michael_Shaker_CV.pdf" download>
+          Download CV
+        </a>
+
+        <a href="mailto:michaelshaker19@gmail.com">
+          Email
+        </a>
       </div>
 
     </div>
