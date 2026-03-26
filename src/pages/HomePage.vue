@@ -10,14 +10,12 @@ import FooterSection from '../components/FooterSection.vue'
 </script>
 
 <template>
-  <main>
-    <HeroSection />
-    <AboutSection />
-    <ProjectsSection />
-    <TimelineSection />
-    <SkillsSection />
-    <DocumentsSection />
-    <ContactSection />
-    <FooterSection />
-  </main>
+  <HeroSection />
+
+  <AboutSection id="about" />
+  <ProjectsSection id="projects" />
+  <SkillsSection id="skills" />
+  <TimelineSection id="journey" />
+  <DocumentsSection id="documents" />
+  <ContactSection id="contact" />
 </template>

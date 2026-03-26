@@ -4,22 +4,25 @@ const documents = [
     title: 'Curriculum Vitae',
     type: 'CV',
     description: 'Download my latest CV in PDF format.',
-    link: '/cv/Michael_Shaker_CV.pdf',
+    link: `${import.meta.env.BASE_URL}documents/Michael_Shaker_CV.pdf`,
     buttonText: 'Download CV',
+    download: true,
   },
   {
     title: 'Propedeuse Diploma',
     type: 'Diploma',
     description: 'Official propedeuse diploma document.',
-    link: '/documents/propedeuse-diploma.pdf',
+    link: `${import.meta.env.BASE_URL}documents/propedeuse-diploma.pdf`,
     buttonText: 'View Document',
+    download: false,
   },
   {
-    title: 'Certificates',
-    type: 'Certificates',
-    description: 'A collection of relevant certificates and completed courses.',
-    link: '/documents/certificates.pdf',
-    buttonText: 'View Certificates',
+    title: 'Grades',
+    type: 'Gradelist',
+    description: 'All grades received during my studies.',
+    link: `${import.meta.env.BASE_URL}documents/grades.pdf`,
+    buttonText: 'View Grades',
+    download: false,
   },
 ]
 </script>
@@ -48,8 +51,9 @@ const documents = [
 
           <a
               :href="document.link"
-              target="_blank"
-              rel="noopener noreferrer"
+              :download="document.download ? '' : null"
+              :target="document.download ? null : '_blank'"
+              :rel="document.download ? null : 'noopener noreferrer'"
               class="btn-secondary document-button"
           >
             {{ document.buttonText }}
