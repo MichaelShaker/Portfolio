@@ -24,7 +24,7 @@ const projects = [
   },
   {
     number: '03',
-    title: 'Beweegvriendelijk Platform',
+    title: 'RIVM Beweegvriendelijk',
     description:
         'Frontend platform built with structured state management using stores, focused on clarity and maintainability.',
     tech: ['Vue', 'JavaScript', 'Stores'],

@@ -3,7 +3,7 @@
     <div class="container project-page">
       <div class="project-hero">
         <p class="page-label">PROJECT DETAIL</p>
-        <h1>Beweegvriendelijk Platform</h1>
+        <h1>RIVM Beweegvriendelijk</h1>
         <p class="page-text">
           This project is a frontend-focused platform built around the idea of a
           movement-friendly environment. Instead of building a traditional backend-heavy
