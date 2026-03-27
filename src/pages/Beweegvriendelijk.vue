@@ -14,7 +14,7 @@
         </p>
         <p class="page-text">
           A deployed version of the project is available online, and the source code is
-          hosted in the GitHub repository linked below. :contentReference[oaicite:1]{index=1}
+          hosted in the GitHub repository linked below.
         </p>
 
         <div class="hero-actions">
