@@ -1,70 +1,63 @@
 <template>
   <section id="about" class="section about-section">
     <div class="container about-layout">
-      <div class="about-left">
+
+      <!-- LEFT CONTENT -->
+      <div class="about-main">
         <p class="about-label">ABOUT ME</p>
 
         <h2 class="section-title about-title">
-          Building practical software with a strong focus on quality and clarity.
+          Building reliable and practical software with a focus on quality and security.
         </h2>
 
         <p class="about-text">
-          I am Michael Shaker, an HBO-ICT student with a strong interest in software engineering,
-          backend systems, web development, and artificial intelligence. I enjoy building projects
-          that solve real problems and presenting them in a clean and professional way.
+          I am Michael Shaker, a third-year HBO-ICT student at the Hogeschool van Amsterdam,
+          specializing in software engineering. I am developing myself as a full stack developer,
+          with a strong focus on building reliable and secure systems.
         </p>
 
         <p class="about-text">
-          My work is focused on combining technical skill with clear structure. I like creating
-          applications that are useful, well-organized, and visually strong.
+          Over the past years, I have built multiple full stack applications as well as separate
+          frontend, backend, and database systems. My experience includes working with technologies
+          such as Vue, Node.js, Python, and SQL, and applying concepts like system design,
+          testing, and deployment.
         </p>
 
-        <div class="about-points">
-          <div class="about-point">
-            <span class="point-dot"></span>
-            <p>Focused on web development, backend systems, and AI</p>
-          </div>
+        <p class="about-text">
+          I have gained practical experience through freelance IT work and as a service desk
+          employee at KPN, where I developed strong problem-solving and communication skills.
+          I also completed a project for RIVM, where I worked on a data-driven application.
+        </p>
 
-          <div class="about-point">
-            <span class="point-dot"></span>
-            <p>Hands-on mindset with practical problem solving</p>
-          </div>
+        <p class="about-text">
+          Currently, I am focusing on software engineering with an increasing interest in
+          cybersecurity, particularly in building secure and reliable applications.
+        </p>
 
-          <div class="about-point">
-            <span class="point-dot"></span>
-            <p>Clean presentation and structured project building</p>
-          </div>
+        <p class="about-text">
+          My goal is to grow into a software engineer who builds high-quality systems
+          that are both functional and secure in real-world environments.
+        </p>
+      </div>
+
+      <!-- RIGHT POINTS -->
+      <div class="about-points">
+        <div class="about-point">
+          <span class="point-dot"></span>
+          <p>Full stack development (Vue, Node.js, Python, SQL)</p>
+        </div>
+
+        <div class="about-point">
+          <span class="point-dot"></span>
+          <p>Experience with real-world projects and applied software development</p>
+        </div>
+
+        <div class="about-point">
+          <span class="point-dot"></span>
+          <p>Focus on building reliable, scalable, and secure systems</p>
         </div>
       </div>
 
-      <div class="card about-card">
-        <div class="about-card-top">
-          <p class="about-card-label">Profile Snapshot</p>
-          <span class="about-card-badge">Student Developer</span>
-        </div>
-
-        <div class="about-card-grid">
-          <div class="about-info-box">
-            <span>Study</span>
-            <h3>HBO-ICT</h3>
-          </div>
-
-          <div class="about-info-box">
-            <span>Focus</span>
-            <h3>Web Development & AI</h3>
-          </div>
-
-          <div class="about-info-box">
-            <span>Approach</span>
-            <h3>Clean practical solutions</h3>
-          </div>
-
-          <div class="about-info-box">
-            <span>Goal</span>
-            <h3>Build useful real-world systems</h3>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 </template>
@@ -76,13 +69,13 @@
 
 .about-layout {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 56px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: 40px;
+  align-items: start;
 }
 
-.about-left {
-  max-width: 680px;
+.about-main {
+  max-width: 760px;
 }
 
 .about-label {
@@ -94,7 +87,7 @@
 }
 
 .about-title {
-  max-width: 700px;
+  max-width: 760px;
 }
 
 .about-text {
@@ -102,23 +95,29 @@
   color: #cbd5e1;
   font-size: 1.05rem;
   line-height: 1.85;
-  max-width: 620px;
+  max-width: 720px;
 }
 
 .about-points {
   display: grid;
   gap: 14px;
-  margin-top: 28px;
+  padding-top: 72px;
 }
 
 .about-point {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  padding: 14px 16px;
+  padding: 16px 18px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.22s ease, border-color 0.22s ease;
+}
+
+.about-point:hover {
+  transform: translateY(-3px);
+  border-color: rgba(99, 102, 241, 0.2);
 }
 
 .point-dot {
@@ -137,77 +136,14 @@
   line-height: 1.6;
 }
 
-.about-card {
-  padding: 28px;
-}
-
-.about-card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  margin-bottom: 22px;
-}
-
-.about-card-label {
-  margin: 0;
-  color: #e2e8f0;
-  font-size: 0.96rem;
-  font-weight: 700;
-}
-
-.about-card-badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: rgba(99, 102, 241, 0.12);
-  border: 1px solid rgba(99, 102, 241, 0.2);
-  color: #c7d2fe;
-  font-size: 0.82rem;
-  font-weight: 700;
-}
-
-.about-card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
-
-.about-info-box {
-  padding: 22px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  transition: transform 0.22s ease, border-color 0.22s ease;
-}
-
-.about-info-box:hover {
-  transform: translateY(-4px);
-  border-color: rgba(99, 102, 241, 0.22);
-}
-
-.about-info-box span {
-  color: #94a3b8;
-  font-size: 0.88rem;
-  font-weight: 600;
-}
-
-.about-info-box h3 {
-  margin: 12px 0 0;
-  color: white;
-  font-size: 1.05rem;
-  line-height: 1.4;
-}
-
 @media (max-width: 950px) {
   .about-layout {
     grid-template-columns: 1fr;
-    gap: 34px;
+    gap: 28px;
   }
 
-  .about-card-grid {
-    grid-template-columns: 1fr;
+  .about-points {
+    padding-top: 0;
   }
 }
 </style>

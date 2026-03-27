@@ -2,18 +2,21 @@
 const skillGroups = [
   {
     title: 'Frontend',
-    description: 'Building clean and responsive user interfaces with a strong focus on usability.',
+    description:
+        'Building clean, responsive, and user-friendly interfaces with a strong focus on structure and usability.',
     items: ['Vue', 'JavaScript', 'HTML', 'CSS'],
   },
   {
     title: 'Backend',
-    description: 'Creating structured logic, APIs, and scalable application foundations.',
-    items: ['Java', 'Spring Boot', 'Node.js', 'SQL'],
+    description:
+        'Developing application logic, APIs, and database-driven systems with attention to reliability and scalability.',
+    items: ['Node.js', 'Java', 'Spring Boot', 'SQL'],
   },
   {
-    title: 'AI',
-    description: 'Working on data-driven and computer vision projects with practical applications.',
-    items: ['Python', 'NumPy', 'OpenCV', 'TensorFlow'],
+    title: 'Software Engineering',
+    description:
+        'Applying system design, testing, deployment, and security principles to build reliable and maintainable applications.',
+    items: ['System Design', 'Testing', 'CI/CD', 'Security Principles'],
   },
 ]
 </script>
@@ -23,10 +26,11 @@ const skillGroups = [
     <div class="container">
       <div class="skills-heading">
         <p class="skills-label">TECH STACK</p>
-        <h2 class="section-title">Skills that support the projects I build.</h2>
+        <h2 class="section-title">Skills that support the software I build.</h2>
         <p class="skills-text">
-          My work combines frontend development, backend logic, and artificial intelligence.
-          These are the main technologies I use to build structured and practical software.
+          My work is mainly focused on full stack software engineering, combining
+          frontend development, backend systems, and the engineering principles
+          needed to build reliable and secure applications.
         </p>
       </div>
 

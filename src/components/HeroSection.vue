@@ -1,5 +1,6 @@
 <script setup>
 import profileImage from '../assets/profile.jpg'
+const cvLink = `${import.meta.env.BASE_URL}documents/Michael_Shaker_CV.pdf`
 </script>
 
 <template>
@@ -24,8 +25,10 @@ import profileImage from '../assets/profile.jpg'
         </p>
 
         <div class="hero-buttons">
-          <a href="#projects" class="btn-primary">View Projects</a>
-          <a href="/cv/Michael_Shaker_CV.pdf" download class="btn-secondary">Download CV</a>
+          <RouterLink to="/#projects" class="btn-primary">
+            View Projects
+          </RouterLink>
+          <a :href="cvLink" download class="btn-secondary">Download CV</a>
           <a
               href="https://www.linkedin.com/"
               target="_blank"
